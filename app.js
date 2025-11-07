@@ -38,4 +38,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
+// Quick health check for Render
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 module.exports = app;
