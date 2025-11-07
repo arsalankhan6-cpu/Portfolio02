@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+  <h1>Contact Me</h1>
+  <p>Email: youremail@example.com</p>
+  <form class="mt-3" method="post" action="#">
+    <div class="mb-3">
+      <label class="form-label">Name</label>
+      <input name="name" class="form-control" required/>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Email</label>
+      <input type="email" name="email" class="form-control" required/>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Message</label>
+      <textarea name="message" class="form-control" rows="4" required></textarea>
+    </div>
+    <button class="btn btn-primary" disabled>Send (UI only)</button>
+  </form>
+<%- include('partials/footer') %>
